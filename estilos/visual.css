@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,200&display=swap');
+
+/*en comun*/
+*{
+    overflow: auto;
+    border: 0%;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: rgb(118, 51, 75);
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.navbar-bodega {
+    display: inline-block;
+    align-items: center;
+    font-size: 5vh;
+    font-weight: bold;
+    color: rgb(240, 255, 206);
+    font-family: 'Playfair Display SC', serif;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: inline-block;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.nav-item {
+    margin-right: 5rem;
+    display: inline-block;
+    font-family: 'Josefin Slab', serif;
+}
+
+.nav-link {
+    font-size: 3.3vh;
+    color: rgb(240, 255, 206);
+    text-decoration: none;
+}
+.nav-link:hover {
+    font-size: 3.3vh;
+    color: rgb(226, 89, 215);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.nav-link:active {
+    font-size: 3.3vh;
+    color: rgba(202, 17, 64, 0.699);
+    text-decoration: none;
+}
+
+.dropdown-vinos {
+    display: none;
+    position: absolute;
+    background-color: rgb(240, 255, 206);
+    padding: 0.5rem;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+    position: fixed;
+    color: rgb(3, 25, 39);
+    background-color:rgb(240, 255, 206) ;
+}
+
+.dropdown-item {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: rgb(3, 25, 39);
+    text-decoration: none;
+}
+.dropdown-item:active {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: rgb(3, 25, 39);
+    text-decoration: none;
+    background-color: rgb(118, 51, 75);
+    color:rgb(240, 255, 206) ;
+}
+
+body{
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+}
+
+footer{
+    background-color: rgb(155, 101, 138);
+    bottom: 0%;
+    border-bottom: 0vh;
+    text-align: center;
+    padding: 2%;
+    background-image: url(../imagenes/botella-de-vino.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 5%;
+    font-weight: bold;
+    color: rgb(240, 255, 206);
+    text-decoration: none;
+    font-family: 'Playfair Display SC', serif;
+}
+
+footer hr{
+    margin-inline: 20%;
+    color: rgb(101, 50, 57);
+}
+
+
+.redes a{
+    text-decoration: none;
+    color: rgb(101, 50, 57);
+    margin: 0.5rem;
+}
+.redes a:hover{
+    color: rgb(240, 255, 206);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.flecha {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 9999;
+}
+
+
+/*index*/
+
+.v-index{
+    background-color: rgb(240, 255, 206, 0.3);
+    border: 3px rgb(89, 9, 37) solid;
+    margin: 0.5rem;
+}
+
+.v-index img{
+    border: 3px rgba(0, 0, 0, 0) solid;
+    border-radius: 5%;
+
+}
+
+.tit-index{
+    font-family: 'Righteous', cursive;
+    font-weight: 600;
+    color: rgb(78, 0, 53);
+    text-decoration: underline;
+}
+
+.text-index{
+    font-family: 'Josefin Slab', serif;
+    color: rgb(3, 25, 39);
+    font-size: 1.1rem;
+}
+
+.video-index{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color:rgb(78, 0, 53, 0.3);
+    color: rgb(3, 25, 39);
+    font-size: 1.1rem;
+    font-family: 'Josefin Slab', serif;
+
+}
+
+.video-index h3{
+    font-family: 'Righteous', cursive;
+    font-weight: 600;
+    color: rgb(78, 0, 53);
+    text-decoration: underline;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.video-index span{
+    color: rgb(240, 255, 206);
+    font-family: 'Playfair Display SC', serif;
+    font-size: large;
+}
+
+@media screen and (max-width: 700px) {
+.videos{
+    margin: 1rem;
+    margin-inline: 0%;
+    width: 100%;
+}
+}
+
+
+.mapa{
+    border: 3px rgb(89, 9, 37) solid ;
+    margin-left: 2%;
+}
+
+.txubicacion{
+    width: 51%;
+    float: right;
+    border: 3px rgb(89, 9, 37) solid ;
+    padding: 2%;
+    background-color: rgb(240, 255, 206, 0.3);
+}
+
+@media screen and (max-width: 1285px) {
+    .mapa-index{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: nowrap;
+        align-items: center;
+
+    }
+    .mapa{
+        border: 3px rgb(89, 9, 37) solid ;
+        
+    }
+    
+    .txubicacion{
+        width: 100%;
+        border: 3px rgb(89, 9, 37) solid ;
+        padding: 2%;
+        background-color:  rgb(240, 255, 206, 0.3);
+    }
+}
+
+
+
+
+/*contacto*/
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.tit-contacto{
+    margin-top: 4%;
+    color:  rgb(240, 255, 206);
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    background-color: rgb(118, 51, 75);
+    border-top: solid 1vh rgb(155, 101, 138);
+    border-bottom: solid 1vh rgb(155, 101, 138);
+    overflow-x: hidden;
+}
+
+form label{
+    color: rgb(3, 25, 39);
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+    font-size: large;
+}
+
+form.contacto input{
+    background-color: rgba(245, 236, 227, 0.5);
+    color: rgb(3, 25, 39);
+    font-weight: 600;
+    padding: 0.5rem;
+    width: 25rem;
+}
+
+form.contacto input:hover{
+    background-color: rgb(155, 101, 138, 0.5);
+    color: rgb(19, 70, 17);
+}
+
+#caracteres-utilizados{
+    color: rgb(3, 25, 39);
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+    font-size: smaller;
+    padding: 1%;
+}
+
+form.contacto textarea{
+    background-color: rgba(245, 236, 227, 0.5);
+    color: rgb(19, 70, 17);
+    font-weight: 600;
+    width: fit-content;
+}
+
+
+form.contacto input.boton{
+    color: rgb(19, 70, 17);
+    background-color: rgba(245, 236, 227, 0.5);
+    font-weight: 600;
+    border-radius: 1rem;
+    font-size: larger;
+    font-variant: small-caps;
+    margin: 1rem;
+    padding: 0.5rem;
+    max-width: 25rem;
+}
+
+form.contacto input.boton:hover{
+    background-color: rgb(155, 101, 138);
+    color:rgb(3, 25, 39);
+    font-weight: 600;
+
+}
+
+form.contacto textarea:hover{
+    background-color: rgb(155, 101, 138, 0.5);
+}
+
+
+
+/*vinos y otros*/
+
+.tit-tinto{
+    margin-top: 6%;
+    color:  rgb(240, 255, 206);
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    background-color: rgb(118, 51, 75);
+    border-top: solid 1vh rgb(155, 101, 138);
+    border-bottom: solid 1vh rgb(155, 101, 138);
+    padding: 0.2rem;
+}
+
+.info-vino {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Slab', serif;
+    border: 3px rgb(89, 9, 37) solid ;
+    margin-inline: 1%;
+    margin-top: 3%;
+    color: rgb(3, 25, 39);
+    background-color: rgb(118, 51, 75, 0.3);
+}
+
+.tx-tinto {
+    flex: 1;
+    margin-right: 20px;
+    font-size: larger;
+    font-variant: small-caps;
+    text-align: center;
+    float: right;
+    width: 60%;  
+}
+
+.img-tinto {
+    width: 200px;
+    height: auto;
+    background-color: rgb(240, 255, 206, 0.3);
+    border: rgb(240, 255, 206)  3px solid;
+    margin: 1rem;
+}
+
+.precio{
+    font-size: x-large;
+    font-style: oblique;
+}
+
+.tx-tinto button {
+    font-size: 1.1em;
+    padding: 1.5vh 3.5vh;
+    border-radius: 2vh;
+    border: none;
+    background-color: rgb(248, 180, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    display: flex-end;
+    margin-bottom: 3%;
+}
+  
+.tx-tinto button:hover {
+    background-color: rgb(229, 165, 0);
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+    .info-vino {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Josefin Slab', serif;
+        border: 3px rgb(89, 9, 37) solid ;
+        margin-inline: 1%;
+        margin-top: 3%;
+        color: rgb(3, 25, 39);
+        background-color: rgb(118, 51, 75, 0.3);
+    }
+    
+    .tx-tinto {
+        font-size: larger;
+        font-variant: small-caps;
+        text-align: left;
+    }
+    
+    .img-tinto {
+        width: 200px;
+        height: auto;
+        background-color: rgb(240, 255, 206, 0.3);
+        border: rgb(240, 255, 206)  3px solid;
+        margin: 1rem;
+    }
+    
+    .precio{
+        font-size: x-large;
+        font-style: oblique;
+    }
+    
+    .tx-tinto button {
+        font-size: 1.1em;
+        padding: 1.5vh 3.5vh;
+        border-radius: 2vh;
+        border: none;
+        background-color: rgb(248, 180, 0);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+        display: flex-end;
+        margin-bottom: 3%;
+    }
+      
+    .tx-tinto button:hover {
+        background-color: rgb(229, 165, 0);
+    }
+}
+
+/*carrito*/
+.cod-descuento{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.8);
+    color: rgb(229, 165, 0);
+    margin-top: 3rem;
+}
+
+.cod-descuento span{
+    color: rgb(240, 255, 206);
+    font-family: 'Playfair Display SC', serif;
+    font-size: large;
+    margin-left: 35%;
+}
+
+table{
+    width: 100%;
+    background-color:rgb(118, 51, 75);
+    background-image: url(../imagenes/fondo-table.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+    background-position: 100%;
+    margin-block: 2%;
+    background-attachment: fixed; 
+}
+
+th, td{
+    height: 5%;
+    text-align: center;
+    border: 0.2vh rgb(89, 9, 37) solid;
+    padding: 2%;
+    font-size: large;
+    color: rgb(240, 255, 206,1);
+   
+}
+th.top{
+    vertical-align: bottom;
+    background-color:   rgb(240, 255, 206,0.7);
+    font-style: oblique;
+    color: rgb(3, 25, 39);
+}
+
+td.eliminar button{
+    background-color: transparent;
+    border: none;
+}
+
+td.eliminar button:active{
+    background-color: rgba(255, 0, 0, 0.397);
+    border: none;
+    border-radius: 100%;
+}
+
+.cant-producto{
+    background-color: rgb(240, 255, 206, 0.0);
+    border: none;
+    width: 3rem; 
+    margin-left: 2rem;
+    color: rgb(240, 255, 206,1);
+}
+
+.totales{
+    background-color: rgb(240, 255, 206,0.0);
+    border: none;
+    color: rgb(240, 255, 206,1);
+}
+
+.button-compra {
+    font-size: 1.2em;
+    padding: 2.5vh 5vh;
+    border-radius: 2vh;
+    border: none;
+    background-color: rgb(248, 180, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.button-compra:hover {
+    background-color: rgb(229, 165, 0);
+}

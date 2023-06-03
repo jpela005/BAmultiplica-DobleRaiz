@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mostrar Tintos</title>
+  <style>
+    /* Estilos CSS para dar formato a los elementos */
+    .tintos {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .tx-tinto {
+      margin-left: 10px;
+    }
+
+    .precio {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vinos Tintos</h1>
+
+  <div id="mostrarTintos"></div>
+
+  <script>
+    // Tu código JavaScript aquí
+    fetch('../script/producto.json')
+      .then(respuesta => respuesta.json())
+      .then(data => {
+        console.log('vinos de doble raiz:', data);
+        mostrarTintos(data);
+      })
+      .catch(error => {
+        console.error('error: ', error);
+      });
+
+    function mostrarTintos(tintos) {
+      const contenedorTintos = document.querySelector("#mostrarTintos");
+
+      tintos.forEach(tinto => {
+        const div= document.createElement("div");
+        div.classList.add("tintos");
+
+        div.innerHTML = `
+          <div>
+            <img src="${tinto.img}" alt="${tinto.uva}">
+          </div>
+          <div class="tx-tinto">
+            <h3>${tinto.uva}</h3>
+            <p>${tinto.descripcion}</p>
+            <p class="precio">${tinto.precio}</p>
+            <button class="btn-add-carrito" type="button" id="${tinto.id}">Agregar al Carrito</button>
+          </div>
+        `;
+
+        contenedorTintos.appendChild(section);
+      });
+    }
+  </script>
+</body>
+</html>

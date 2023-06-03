@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="../estilos/visual.css">
+  <link rel="icon" href="../imagenes/botella-de-vino.png">
+  <title>Carrito | Bodega Doble Raíz</title>
+</head>
+
+<body id="inicio">
+
+  <div class="flecha">
+    <a href="#inicio">
+      <img src="../imagenes/flecha-arriba.png" alt="flecha arriba" width="55">
+    </a>
+  </div>
+
+  <header>
+    <nav class="navbar">
+      <a img src="../imagenes/botella-de-vino.png" alt="vino y copa" width="30" height="24"
+        class="navbar-bodega  animate__animated animate__zoomIn" href="../index.html">Bodega Doble Raiz</a>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+        <li class="nav-item dropdown">
+          <span class="nav-link dropdown-toggle">Vinos</span>
+          <ul class="dropdown-menu">
+            <li><a href="./tintos.html" class="dropdown-item">Vinos Tintos</a></li>
+            <li><a href="./blancos.html" class="dropdown-item">Vinos Blancos</a></li>
+            <li><a href="./otros.html" class="dropdown-item">Otros Productos</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./carrito.html">Carrito <img src="../imagenes/carrito.png"
+              width="30" alt="carrito de compras"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="tit-contacto">
+      <h2 class="animate__animated animate__flipInX">Carro De Compras</h2>
+    </div>
+
+    <section class="cod-descuento">
+      <p>Consegui un descuento del 15% en tu proxima compra con el siguiente codigo: <br> <span>15EnMiDobleRaiz</span>
+      </p>
+    </section>
+
+    <table>
+      <tr>
+        <th class="top">Eliminar</th>
+        <th class="top">Producto</th>
+        <th class="top">Precio</th>
+        <th class="top">Cantidad</th>
+        <th class="top">Subtotal</th>
+      </tr>
+      
+      <tr>
+        <td class="eliminar"><button><img src="../imagenes/cerrar.png" alt="eliminar" height="40"></button></td>
+        <td id="producto">Dobricic</td>
+        <td id="precio">3850</td>
+        <td><input class="cant-producto" type="number" min="0" value="0"></td>  
+        <td class="subtotal"><input type="number" id="subtotal" class="totales" disabled></td>
+      </tr>
+  
+      <tr>
+        <th colspan="3">Total</th>
+        <th id="total" colspan="3">$<input id="precio-total" class="totales" type="number" disabled></th>
+      </tr>
+      <tr>
+        <th colspan="5">
+          <p>INGRESE SU CUPON DE DESCUENTO:<input id="input-descss" class="codigo-desc" type="text"></p>
+          <button class="button-compra" type="button">COMPRAR</button>
+        </th>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <p>gracias por su visita, los esperamos pronto.</p>
+    <h4 class="p-1">Bodega Doble Raiz</h4>
+    <hr>
+    <div class="redes">
+      <a href="https://www.instagram.com/" target="_blank"><img src="../imagenes/redes/instagram.png"
+          alt="instagram" width="2%">BodegaDobleRaiz</a>
+      <a href="https://twitter.com/" target="_blank"><img src="../imagenes/redes/twitter-bn.png" alt="twitter"
+          width="2%">@BodegaDobleRaiz</a>
+      <a href="https://web.whatsapp.com/" target="_blank"><img src="../imagenes/redes/whatsapp-bn.png"
+          alt="whatsapp" width="3%">+321 3376517098</a>
+      <a href="https://www.youtube.com/" target="_blank"><img src="../imagenes/redes/YouTube-bn.png" alt="YouTube"
+          width="3%">/BodegaDobleRaiz</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="../script/script.js"></script>
+  <script src="../script/carrito.js"></script>
+
+</body>
+
+</html>
