@@ -2,7 +2,7 @@
   const precio = document.getElementById("precio");
   const subtotalInput = document.getElementById("subtotal");
   const totalInput = document.getElementById("precio-total");
-  const descuentoInput = document.getElementById("input-descss");
+  const descuentoInput = document.getElementById("input-descuento");
 
   function calcularTotal() {
     const cantidad = parseInt(cantidadInput.value);
