@@ -40,18 +40,18 @@
   <main>
     <div class="tit-contacto"><h2 class="animate__animated animate__flipInX">Contactese con nosotros</h2></div>
       <form action="" class="my-3 contacto">
-          <label for="name">Nombre: </label>
-          <input type="text" class="mb-3" id="nombre" name="name" placeholder="Nombre">
-          <label for="apellido">Apellido: </label>
-          <input type="text" class="mb-3" id="apellido" name="apellido" placeholder="Apellido">
-          <label id="correo" for="email">Email: </label>
-          <input type="email" class="mb-3" id="email" name="email" placeholder="email@ejemplo.com">
-          <label for="comentario">Dejanos aqui tu inquietud:</label>
-          <textarea name="comentario" id="textarea-contacto" maxlength="500" cols="50" rows="10"></textarea><span id="caracteres-utilizados"></span>
-
+          <label for="name" >Nombre: <span>*</span></label>
+          <input type="text" class="mb-3" id="nombre" name="name" placeholder="Nombre" required>
+          <label for="apellido">Apellido: <span>*</span></label>
+          <input type="text" class="mb-3" id="apellido" name="apellido" placeholder="Apellido" required>
+          <label id="correo" for="email">Email: <span>*</span></label>
+          <input type="email" class="mb-3" id="email" name="email" placeholder="email@ejemplo.com" required>
+          <label for="comentario">Dejanos aqui tu inquietud: <span>*</span></label>
+          <textarea name="comentario" id="textarea-contacto" maxlength="500" cols="50" rows="10" placeholder="deje aqui su mensaje..." required></textarea><span id="caracteres-utilizados"></span>
+          <p id="mensaje-error" ></p>
           <input id="submit" class="boton" type="submit" value="Enviar Form."  onclick="enviado()">
           <input class="boton" type="reset" value="Borrar Form.">
-          <p id="mensaje-enviado" ></p>
+          
         </form>
   </main>
   <footer >
