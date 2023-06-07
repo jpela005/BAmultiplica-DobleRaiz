@@ -22,7 +22,7 @@
     "mililitros":"350",
     "anioElaboracion":"2022",
     "disponibilidad": true,
-    "img":"..imagenes/tinto.png" 
+    "img":"../imagenes/tinto.png" 
     },
     {
     "id": "tinto3",
@@ -35,7 +35,7 @@
     "mililitros":"750",
     "anioElaboracion":"2023",
     "disponibilidad": false,
-    "img":"..imagenes/tinto.png" 
+    "img":"../imagenes/tinto.png" 
     },
     {
     "id": "tinto4",
@@ -48,7 +48,7 @@
     "mililitros":"750",
     "anioElaboracion":"2020",
     "disponibilidad": true,
-    "img":"..imagenes/tinto.png" 
+    "img":"../imagenes/tinto.png" 
     },
     {
     "id": "tinto5",
@@ -61,7 +61,7 @@
     "mililitros":"750",
     "anioElaboracion":"2023",
     "disponibilidad": true,
-    "img":"..imagenes/tinto.png" 
+    "img":"../imagenes/tinto.png" 
     
     },
     {
@@ -75,7 +75,7 @@
     "mililitros":"350",
     "anioElaboracion":"2022",
     "disponibilidad": false,
-    "img":"..imagenes/tinto.png" 
+    "img":"../imagenes/tinto.png" 
     },
     {
     "id": "tinto7",
@@ -88,7 +88,7 @@
     "mililitros":"1000",
     "anioElaboracion":"2022",
     "disponibilidad": true,
-    "img":"..imagenes/tinto.png"    },
+    "img":"../imagenes/tinto.png"    },
     {
     "id": "tinto8",
     "producto":"vino",

@@ -40,3 +40,7 @@
   cantidadInput.addEventListener("change", calcularTotal);
   descuentoInput.addEventListener("input", calcularTotal);
 
+
+
+
+
