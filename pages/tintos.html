@@ -21,7 +21,7 @@
     
   <header>
     <nav class="navbar">
-      <a img src="../imagenes/botella-de-vino.png" alt="vino y copa" width="30" height="24" class="navbar-bodega  animate__animated animate__zoomIn" href="../index.html">Bodega Doble Raiz</a> 
+      <a img src="../imagenes/botella-de-vino.png" alt="vino y copa" width="30" height="24" class="navbar-bodega animate__animated animate__zoomIn" href="../index.html">Bodega Doble Raiz</a>
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
@@ -33,11 +33,20 @@
             <li><a href="./otros.html" class="dropdown-item">Otros Productos</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="./carrito.html">Carrito<img src="../imagenes/carrito.png" width="30" alt="carrito de compras" > <span id="contador-carrito" class="contador">0</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="./carrito.html">
+            Carrito<img src="../imagenes/carrito.png" width="30" alt="carrito de compras">
+            <span id="contador-carrito" class="contador">0</span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item"><button id="btn-reset-carrito" style="display: none;">Restablecer</button>
+                </li>
+              </ul>
+
         </li>
       </ul>
     </nav>
   </header>
+  
 
   <main class="productos">
 
@@ -110,9 +119,8 @@
     <sub>Todos los derechos reservados &copy; 2023 Bodega Doble Raiz</sub>
   </footer>
 
+
   
-
-
 
   <script src="../script/productos.js"></script>
   <script src="../script/script.js"></script> 

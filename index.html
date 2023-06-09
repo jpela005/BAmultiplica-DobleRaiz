@@ -12,28 +12,33 @@
 </head>
 <body id="inicio">
   
-  <header id="top">
+  <header>
     <nav class="navbar">
-      <a img src="../imagenes/botella-de-vino.png" alt="vino y copa" width="30" height="24" class="navbar-bodega  animate__animated animate__zoomIn" href="../index.html">Bodega Doble Raiz</a>
+      <a img src="../imagenes/botella-de-vino.png" alt="vino y copa" width="30" height="24" class="navbar-bodega animate__animated animate__zoomIn" href="../index.html">Bodega Doble Raiz</a>
       <ul class="navbar-nav">
-    
         <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-    
-        <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
-    
+        <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
         <li class="nav-item dropdown">
           <span class="nav-link dropdown-toggle">Vinos</span>
           <ul class="dropdown-menu">
-            <li><a href="./pages/tintos.html" class="dropdown-item">Vinos Tintos</a></li>
-            <li><a href="./pages/blancos.html" class="dropdown-item">Vinos Blancos</a></li>
-            <li><a href="./pages/otros.html" class="dropdown-item">Otros Productos</a></li>
+            <li><a href="../pages/tintos.html" class="dropdown-item">Vinos Tintos</a></li>
+            <li><a href="../pages/blancos.html" class="dropdown-item">Vinos Blancos</a></li>
+            <li><a href="../pages/otros.html" class="dropdown-item">Otros Productos</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="./pages/carrito.html">Carrito <img src="./imagenes/carrito.png" width="30" alt="carrito de compras"><span id="contador-carrito" class="contador">0</span></a></li>
-    
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/carrito.html">
+            Carrito<img src="../imagenes/carrito.png" width="30" alt="carrito de compras">
+            <span id="contador-carrito" class="contador">0</span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item"><button id="btn-reset-carrito" style="display: none;">Restablecer</button>
+                </li>
+              </ul>
+        </li>
       </ul>
     </nav>
   </header>
+
 
   <main>
 
@@ -89,7 +94,7 @@
     <h3 class="tit-index">Nuestro Viniedo.</h3>
     <h4>queres conocer donde se hace nuestros productos?</h4>
     <p>conoce <span>Bodega Doble Raiz</span> en el siguiente video:</p>
-     <video src="./imagenes/Viñedo-drone.mp4" controls width="500"></video>
+     <video src="./imagenes/Viñedo-drone.mp4" controls width="800"></video>
    </section>
 
 
@@ -108,8 +113,6 @@
         </p>
       </div>
     </section>
-   
-   
    
     <section class="mapa-index">
       <div class="ubicacion mb-5">

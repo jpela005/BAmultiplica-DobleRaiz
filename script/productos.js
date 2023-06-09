@@ -1,7 +1,6 @@
-  //carrito
-
 const contadorCarrito = document.getElementById('contador-carrito');
 const botonesAgregar = document.getElementsByClassName('btn-add-carrito');
+const btnResetCarrito = document.getElementById('btn-reset-carrito');
 let contador = localStorage.getItem('contadorCarrito');
 
 if (!contador) {
@@ -10,6 +9,13 @@ if (!contador) {
 
 function actualizarContadorCarrito() {
   contadorCarrito.textContent = contador;
+
+  //para boton restablecer
+  if (contador === 0) {
+    btnResetCarrito.style.display = 'none';
+  } else {
+    btnResetCarrito.style.display = 'inline-block';
+  }
 }
 
 // Llamar función para actualizar el contador carrito
@@ -24,3 +30,10 @@ for (let i = 0; i < botonesAgregar.length; i++) {
     localStorage.setItem('contadorCarrito', contador);
   });
 }
+
+//restablecer el contador del carrito
+btnResetCarrito.addEventListener('click', () => {
+  contador = 0;
+  actualizarContadorCarrito();
+  localStorage.clear();
+});

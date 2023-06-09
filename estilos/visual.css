@@ -13,8 +13,7 @@
 main{
     margin-top: 5rem;
 }
-
-      
+     
 body{
     background-image: url(../imagenes/fondo.jpg);
     background-repeat: no-repeat;
@@ -65,7 +64,19 @@ body{
     color: rgb(240, 255, 206);
     text-decoration: none;
 }
-  
+
+.nav-link span{
+    font-size: 3.3vh;
+    color: rgb(240, 255, 206);
+    text-decoration: none;
+}
+
+.nav-link span:hover{
+    font-size: 3.3vh;
+    color: rgb(240, 255, 206);
+    text-decoration: none;
+}
+
 .nav-link:hover {
     font-size: 3.3vh;
     color: rgb(226, 89, 215);
@@ -107,86 +118,106 @@ body{
 .dropdown-item:active {
     display: block;
     margin-bottom: 0.5rem;
-    color: rgb(3, 25, 39);
     text-decoration: none;
     background-color: rgb(118, 51, 75);
     color: rgb(240, 255, 206);
 }
 
+#btn-reset-carrito{
+    border: transparent;
+    color:  rgb(3, 25, 39);
+    background-color: transparent
+}
 
-@media screen and (max-width: 1800px) {
+#btn-reset-carrito:active{
+    border: transparent;
+    color:rgb(240, 255, 206);
+    background-color: transparent
+}
+@media screen and (max-width: 1090px) {
     .navbar {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         z-index: 9999;
-        }
+    }
 
     .navbar-bodega {
-            display: inline-block;
-            align-items: center;
-            font-size: 3vh;
-            font-weight: bold;
-            color: rgb(240, 255, 206);
-            font-family: 'Playfair Display SC', serif;
-            text-decoration: none;
+        display: inline-block;
+        align-items: center;
+        font-size: 4vh;
+        font-weight: bold;
+        color: rgb(240, 255, 206);
+        font-family: 'Playfair Display SC', serif;
+        text-decoration: none;
     }
 
     .nav-link {
-            font-size: 2vh;
-            color: rgb(240, 255, 206);
-            text-decoration: none;
+        font-size: 2.5vh;
+        color: rgb(240, 255, 206);
+        text-decoration: none;
+    }
+
+    .nav-link span{
+        font-size: 2.5vh;
+        color: rgb(240, 255, 206);
+        text-decoration: none;
+    }
+    
+    .nav-link span:hover{
+        font-size: 2.5vh;
+        color: rgb(240, 255, 206);
+        text-decoration: none;
     }
 
     main {
-        margin-top: 6rem
+        margin-top: 7rem
       }
 
-        
       body {
-        margin-top: 6rem
+        margin-top: 7rem
      }
 
 }
 
-
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1200px) {
     .navbar {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         z-index: 9999;
-        }
-        
-
-    .navbar-bodega {
-            display: inline-block;
-            align-items: center;
-            font-size: 2.3vh;
-            font-weight: bold;
-            color: rgb(240, 255, 206);
-            font-family: 'Playfair Display SC', serif;
-            text-decoration: none;
-    }
-
-    .nav-link {
-            font-size: 2vh;
-            color: rgb(240, 255, 206);
-            text-decoration: none;
     }
 
     main {
-        margin-top: 7rem
-      }
-
-        
-      body {
-        margin-top: 7rem
-     }
-
+        margin-top: 8rem
     }
+
+    body {
+        margin-top: 8rem
+    }
+
+}
+@media screen and (max-width: 900px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    main {
+        margin-top: 8rem
+    }
+
+    body {
+        margin-top: 8rem
+    }
+
+}
+
 @media screen and (max-width: 750px) {
     .navbar {
         position: fixed;
@@ -195,33 +226,40 @@ body{
         width: 100%;
         z-index: 9999;
         }
-       
-    main {
-        margin-top: 8rem
-      } 
-
-        body {
-            margin-top: 8rem
-         }
-        
+    
+    .navbar-bodega {
+        display: inline-block;
+        align-items: center;
+        font-size: 2.5vh;
+        font-weight: bold;
+        color: rgb(240, 255, 206);
+        font-family: 'Playfair Display SC', serif;
+        text-decoration: none;
 }
 
+.nav-link {
+        font-size: 1.5vh;
+        color: rgb(240, 255, 206);
+        text-decoration: none;
+}
 
-@media screen and (max-width: 550px) {
-    .navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 9999;
-        }
-        
+.nav-link span{
+    font-size: 1.5vh;
+    color: rgb(240, 255, 206);
+    text-decoration: none;
+}
+
+.nav-link span:hover{
+    font-size: 1.5vh;
+    color: rgb(240, 255, 206);
+    text-decoration: none;
+}   
     main {
-          margin-top: 9rem
+          margin-top: 8rem
         }
-    body{margin-top: 9rem;}
+    body{margin-top: 8rem;}
 
-    }
+}
 
 @media screen and (max-width: 450px) {
     .navbar {
@@ -230,16 +268,13 @@ body{
         left: 0;
         width: 100%;
         z-index: 9999;
-        }
-        
+    }
     main {
           margin-top: 10rem
         }
     body{margin-top: 10rem;}
 
-    }
-
-
+}
 
 footer{
     background-color: rgb(155, 101, 138);
@@ -326,9 +361,9 @@ footer sub {
       font-size: small
         
     }
-  }
+}
 
-  @media screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {
     footer {
       background-color: rgb(155, 101, 138);
       bottom: 0%;
@@ -375,7 +410,7 @@ footer sub {
       font-size: small
         
     }
-  }
+}
 
 .flecha {
     display: flex;
@@ -440,6 +475,7 @@ footer sub {
     color: rgb(3, 25, 39);
     font-size: 1.1rem;
     font-family: 'Josefin Slab', serif;
+    padding: 1rem;
 }
 
 .video-index h3{
@@ -455,71 +491,62 @@ footer sub {
     color: rgb(240, 255, 206);
     font-family: 'Playfair Display SC', serif;
     font-size: large;
+    
 }
 
-@media screen and (max-width: 700px) {
-.videos{
-    margin: 1rem;
-    margin-inline: 0%;
-    width: 100%;
+.video-index video{
+    width: 750px;
 }
+
+@media screen and (max-width: 750px) {
+
+    .video-index video{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .video-index video{
+        width: 350px;
+    }
+}
+
+.mapa-index{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 1rem;
 }
 
 .mapa{
     border: 3px rgb(89, 9, 37) solid ;
-    margin-left: 2%;
+    margin-top: 2rem;
 }
 
 .txubicacion{
-    width: 51%;
-    float: right;
     border: 3px rgb(89, 9, 37) solid ;
     padding: 2%;
     background-color: rgb(240, 255, 206, 0.3);
 }
 
-@media screen and (max-width: 1000px) {
-    .mapa-index{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        flex-wrap: nowrap;
-        align-items: center;
+@media (max-width: 700px) {
+    .mapa-index {
+      flex-direction: column;
+      align-items: center;
     }
-    .mapa{
-        border: 3px rgb(89, 9, 37) solid ;
+    .mapa {
+      width: 100%;
+      height: 300px;
     }
-    
-    .txubicacion{
-        width: 100%;
-        border: 3px rgb(89, 9, 37) solid ;
-        padding: 2%;
-        background-color:  rgb(240, 255, 206, 0.3);
+    .txubicacion {
+      text-align: center;
+      margin-top: 0.5rem;
     }
-}
-
-@media screen and (max-width: 750px) {
-    .mapa-index{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        flex-wrap: nowrap;
-        align-items: center;
-        max-width: 200px;
-    }
-    .mapa{
-        border: 3px rgb(89, 9, 37) solid ;
-    }
-    
-    .txubicacion{
-        width: 100%;
-        border: 3px rgb(89, 9, 37) solid ;
-        padding: 2%;
-        background-color:  rgb(240, 255, 206, 0.3);
-    }
-}
+  }
 
 /*contacto*/
 
@@ -560,7 +587,7 @@ form.contacto input{
     color: rgb(3, 25, 39);
     font-weight: 600;
     padding: 0.5rem;
-    width: 25rem;
+    width: 35rem;
 }
 
 form.contacto input:hover{
@@ -580,7 +607,7 @@ form.contacto textarea{
     background-color: rgba(245, 236, 227, 0.5);
     color: rgb(19, 70, 17);
     font-weight: 600;
-    width: fit-content;
+    width: 35rem;
 }
 
 form.contacto input.boton{
@@ -604,6 +631,42 @@ form.contacto input.boton:hover{
 
 form.contacto textarea:hover{
     background-color: rgb(155, 101, 138, 0.5);
+}
+
+@media screen and (max-width: 650px) { 
+
+    form.contacto input{
+        background-color: rgba(245, 236, 227, 0.5);
+        color: rgb(3, 25, 39);
+        font-weight: 600;
+        padding: 0.5rem;
+        width: 20rem;
+    }
+    form.contacto textarea{
+        background-color: rgba(245, 236, 227, 0.5);
+        color: rgb(19, 70, 17);
+        font-weight: 600;
+        width: 20rem;
+    }
+    
+}
+
+@media screen and (max-width: 350px) { 
+
+    form.contacto input{
+        background-color: rgba(245, 236, 227, 0.5);
+        color: rgb(3, 25, 39);
+        font-weight: 600;
+        padding: 0.5rem;
+        width: 15rem;
+    }
+    form.contacto textarea{
+        background-color: rgba(245, 236, 227, 0.5);
+        color: rgb(19, 70, 17);
+        font-weight: 600;
+        width: 15rem;
+    }
+    
 }
 
 /*vinos y otros*/
@@ -686,11 +749,20 @@ form.contacto textarea:hover{
 }
 
 @media screen and (max-width: 750px) {
+    .img-vinos {
+        width: 200px;
+        height: 250px;
+        background-color: rgb(240, 255, 206, 0.3);
+        border: rgb(240, 255, 206)  3px solid;
+        margin: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
     .info-vino {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         font-family: 'Josefin Slab', serif;
         border: 3px rgb(89, 9, 37) solid ;
         margin-inline: 1%;
@@ -700,20 +772,20 @@ form.contacto textarea:hover{
     }
     
     .tx-vinos {
-        font-size: larger;
+        font-size: medium;
         font-variant: small-caps;
         text-align: center;
     }
     
     .tx-vinos h3{
-        font-size: x-large;
+        font-size: larger;
         text-align: center;
         font-weight: 1000;
         font-variant: normal;
     }
 
     .img-vinos {
-        width: 200px;
+        width: 140px;
         height: auto;
         background-color: rgb(240, 255, 206, 0.3);
         border: rgb(240, 255, 206)  3px solid;
@@ -721,7 +793,7 @@ form.contacto textarea:hover{
     }
     
     .precio{
-        font-size: x-large;
+        font-size: medium;
         font-style: oblique;
     }
     
@@ -737,16 +809,6 @@ form.contacto textarea:hover{
         display: flex-end;
         margin-bottom: 3%;
     }
-      
-    .tx-vinos button:hover {
-        background-color: rgb(229, 165, 0);
-    }
-
-    .tx-vinos button:active {
-        background-color: rgb(229, 165, 0);
-        color: rgb(3, 25, 39);
-    }   
-
 
 }   
 /*carrito*/
@@ -765,7 +827,6 @@ form.contacto textarea:hover{
     margin-left: 35%;
 }
 
-/* Estilos para dispositivos de pantalla grande */
 table {
     width: 100%;
     background-color: rgb(118, 51, 75);
@@ -778,58 +839,73 @@ table {
     margin-block: 2%;
     background-attachment: fixed;
     overflow-x: hidden;
-  }
+}
   
-  th,
-  td {
+th,td {
     text-align: center;
     border: 0.1vh rgb(89, 9, 37) solid;
     padding: 2%;
     font-size: large;
     color: rgb(240, 255, 206, 1);
-  }
+}
   
-  th.top {
+th.top {
     vertical-align: bottom;
     background-color: rgb(240, 255, 206, 0.7);
     font-style: oblique;
     color: rgb(3, 25, 39);
-  }
+}
   
-  td.eliminar button {
+td.eliminar button {
     background-color: transparent;
     border: none;
-  }
+}
   
-  td.eliminar button:active {
+td.eliminar button:active {
     background-color: rgba(255, 0, 0, 0.397);
     border: none;
     border-radius: 100%;
-  }
+}
   
-  .cant-producto {
+.cant-producto {
     background-color: rgb(240, 255, 206, 0.0);
     border: none;
-    width: 3rem;
+    width: 0rem;
     margin-left: 1.5rem;
     color: rgb(240, 255, 206, 1);
-  }
+}
   
-  .totales {
+.totales {
     background-color: rgb(240, 255, 206, 0.0);
     border: none;
     color: rgb(240, 255, 206, 1);
-  }
+}
   
-  #input-descuento {
+#input-descuento {
     background-color: rgb(118, 51, 75, 0.0);
     color: rgb(240, 255, 206, 1);
     font-weight: 700;
     font-family: 'Playfair Display SC', serif;
     padding-left: 0.5rem;
-  }
-  
-  .button-compra {
+}
+ 
+#cantidad-carrito{
+    width: 3rem;
+    
+}
+
+#subtotal{
+    width: 5rem;
+    display: flex;
+    align-content: start;
+}
+
+#total{
+    display: flex;
+    align-content: start;
+}
+
+.button-compra {
     font-size: 1.2rem;
     padding: 2.5vh 5vh;
     border-radius: 2vh;
@@ -838,37 +914,59 @@ table {
     color: rgb(255, 255, 255);
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+}
   
   .button-compra:hover {
     background-color: rgb(229, 165, 0);
-  }
+}
   
   .button-compra:active {
     background-color: rgb(229, 165, 0);
     color: rgb(3, 25, 39);
-  }
-  
-  @media screen and (max-width: 750px) {
+}
+
+@media (min-width: 768px) {
     table {
-      width: 100%;
-      margin-block: 2%;
-      background-attachment: scroll;
+      font-size: 16px;
     }
-  
     th, td {
-      padding: 1%;
-      font-size: medium;
-    }
-  
-    .cant-producto {
-      width: 2rem;
-      margin-left: 0.5rem;
-    }
-  
-    .button-compra {
-      font-size: 1rem;
-      padding: 1.5vh 3vh;
+      padding: 12px;
     }
   }
-  
+
+
+  @media (max-width: 767px) {
+    table {
+      font-size: 14px;
+    }
+    th, td {
+      padding: 8px;
+    }
+    .eliminar button img {
+      height: 30px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    table {
+      font-size: 12px;
+    }
+    th, td {
+      padding: 6px;
+    }
+    .eliminar button img {
+      height: 20px;
+    }
+  }
+
+  @media (max-width: 376px) {
+    table {
+      font-size: 6px;
+    }
+    th, td {
+      padding: 3px;
+    }
+    .eliminar button img {
+      height: 10px;
+    }
+}

@@ -41,8 +41,12 @@
   descuentoInput.addEventListener("input", calcularTotal);
 
 
+//boton comprar
+  const botonComprar = document.getElementById('comprar');
 
-
+  botonComprar.addEventListener('click', function() {
+    alert('¡Gracias por tu compra!');
+  });
 
 
 
