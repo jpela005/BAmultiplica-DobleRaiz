@@ -5,8 +5,6 @@
    dropdownMenu.classList.toggle('show');
  }
  
- 
-
 //contador de caractares de textarea contacto
 
  const contadorTextArea = document.getElementById("textarea-contacto");

@@ -10,13 +10,32 @@
     box-sizing: border-box;
 }
 
+main{
+    margin-top: 5rem;
+}
+
+      
+body{
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    margin-top: 5rem;
+}
+
 .navbar {
     background-color: rgb(118, 51, 75);
     display: flex;
     justify-content: space-between;
     padding: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
 }
-
+  
 .navbar-bodega {
     display: inline-block;
     align-items: center;
@@ -26,7 +45,7 @@
     font-family: 'Playfair Display SC', serif;
     text-decoration: none;
 }
-
+  
 .navbar-nav {
     display: inline-block;
     align-items: center;
@@ -34,65 +53,193 @@
     margin: 0;
     padding: 0;
 }
-
+  
 .nav-item {
     margin-right: 5rem;
     display: inline-block;
     font-family: 'Josefin Slab', serif;
 }
-
+  
 .nav-link {
     font-size: 3.3vh;
     color: rgb(240, 255, 206);
     text-decoration: none;
 }
+  
 .nav-link:hover {
     font-size: 3.3vh;
     color: rgb(226, 89, 215);
     text-decoration: none;
     transition: 0.3s;
 }
+  
 .nav-link:active {
     font-size: 3.3vh;
     color: rgba(202, 17, 64, 0.699);
     text-decoration: none;
 }
-
+  
 .dropdown-vinos {
     display: none;
-    position: absolute;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
     background-color: rgb(240, 255, 206);
     padding: 0.5rem;
+    z-index: 9999;
 }
-
+  
 .nav-item:hover .dropdown-menu {
     display: block;
     position: fixed;
     color: rgb(3, 25, 39);
-    background-color:rgb(240, 255, 206) ;
+    background-color: rgb(240, 255, 206);
 }
-
+  
 .dropdown-item {
     display: block;
     margin-bottom: 0.5rem;
     color: rgb(3, 25, 39);
     text-decoration: none;
 }
+  
 .dropdown-item:active {
     display: block;
     margin-bottom: 0.5rem;
     color: rgb(3, 25, 39);
     text-decoration: none;
     background-color: rgb(118, 51, 75);
-    color:rgb(240, 255, 206) ;
+    color: rgb(240, 255, 206);
 }
 
-body{
-    background-image: url(../imagenes/fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0%;
+
+@media screen and (max-width: 1800px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        }
+
+    .navbar-bodega {
+            display: inline-block;
+            align-items: center;
+            font-size: 3vh;
+            font-weight: bold;
+            color: rgb(240, 255, 206);
+            font-family: 'Playfair Display SC', serif;
+            text-decoration: none;
+    }
+
+    .nav-link {
+            font-size: 2vh;
+            color: rgb(240, 255, 206);
+            text-decoration: none;
+    }
+
+    main {
+        margin-top: 6rem
+      }
+
+        
+      body {
+        margin-top: 6rem
+     }
+
 }
+
+
+@media screen and (max-width: 850px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        }
+        
+
+    .navbar-bodega {
+            display: inline-block;
+            align-items: center;
+            font-size: 2.3vh;
+            font-weight: bold;
+            color: rgb(240, 255, 206);
+            font-family: 'Playfair Display SC', serif;
+            text-decoration: none;
+    }
+
+    .nav-link {
+            font-size: 2vh;
+            color: rgb(240, 255, 206);
+            text-decoration: none;
+    }
+
+    main {
+        margin-top: 7rem
+      }
+
+        
+      body {
+        margin-top: 7rem
+     }
+
+    }
+@media screen and (max-width: 750px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        }
+       
+    main {
+        margin-top: 8rem
+      } 
+
+        body {
+            margin-top: 8rem
+         }
+        
+}
+
+
+@media screen and (max-width: 550px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        }
+        
+    main {
+          margin-top: 9rem
+        }
+    body{margin-top: 9rem;}
+
+    }
+
+@media screen and (max-width: 450px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        }
+        
+    main {
+          margin-top: 10rem
+        }
+    body{margin-top: 10rem;}
+
+    }
+
+
 
 footer{
     background-color: rgb(155, 101, 138);
@@ -132,44 +279,103 @@ footer sub {
     font-weight: bold;
 }
 
-@media screen and (max-width: 700px){
-    footer{
-        background-color: rgb(155, 101, 138);
-        bottom: 0%;
-        border-bottom: 0vh;
-        text-align: center;
-        padding: 2%;
-        background-image: url(../imagenes/botella-de-vino.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 5%;
-        font-weight: bold;
-        color: rgb(240, 255, 206);
-        text-decoration: none;
-        font-family: 'Playfair Display SC', serif;
+@media screen and (max-width: 750px) {
+    footer {
+      background-color: rgb(155, 101, 138);
+      bottom: 0%;
+      border-bottom: 0vh;
+      text-align: center;
+      background-image: url(../imagenes/botella-de-vino.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 5%;
+      font-weight: 300;
+      color: rgb(240, 255, 206);
+      text-decoration: none;
+      font-family: 'Playfair Display SC', serif;
+      padding: 1%;
+      font-size: small; 
     }
-    
-    footer hr{
-        margin-inline: 10%;
-        color: rgb(101, 50, 57);
+
+    footer h4{
+        font-size: small
     }
-    
+  
+    footer hr {
+      margin-inline: 5%; 
+      color: rgb(101, 50, 57);
+    }
+  
     footer sub {
-        color: rgb(101, 50, 57);
-        font-size: xx-small;
+      color: rgb(101, 50, 57);
+      font-size: xx-small;
     }
-    
-    .redes a{
-        text-decoration: none;
-        color: rgb(101, 50, 57);
-        margin: 2.5rem;
+  
+    .redes a {
+      text-decoration: none;
+      color: rgb(101, 50, 57);
+      margin: 1rem;
+      font-size: x-small
+
     }
-    .redes a:hover{
-        color: rgb(240, 255, 206);
-        text-decoration: underline;
-        font-weight: bold;
-    }   
-}
+  
+    .redes a:hover {
+      color: rgb(240, 255, 206);
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: small
+        
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    footer {
+      background-color: rgb(155, 101, 138);
+      bottom: 0%;
+      border-bottom: 0vh;
+      text-align: center;
+      background-image: url(../imagenes/botella-de-vino.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 5%;
+      font-weight: 300;
+      color: rgb(240, 255, 206);
+      text-decoration: none;
+      font-family: 'Playfair Display SC', serif;
+      padding: 1%;
+      font-size: small; 
+    }
+
+    footer h4{
+        font-size: small
+    }
+  
+    footer hr {
+      margin-inline: 5%; 
+      color: rgb(101, 50, 57);
+    }
+  
+    footer sub {
+      color: rgb(101, 50, 57);
+      font-size: xx-small;
+    }
+  
+    .redes a {
+      text-decoration: none;
+      color: rgb(101, 50, 57);
+      margin: 0rem;
+      font-size: xx-small
+
+    }
+  
+    .redes a:hover {
+      color: rgb(240, 255, 206);
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: small
+        
+    }
+  }
 
 .flecha {
     display: flex;
@@ -272,7 +478,7 @@ footer sub {
     background-color: rgb(240, 255, 206, 0.3);
 }
 
-@media screen and (max-width: 1285px) {
+@media screen and (max-width: 1000px) {
     .mapa-index{
         display: flex;
         justify-content: center;
@@ -280,6 +486,28 @@ footer sub {
         text-align: center;
         flex-wrap: nowrap;
         align-items: center;
+    }
+    .mapa{
+        border: 3px rgb(89, 9, 37) solid ;
+    }
+    
+    .txubicacion{
+        width: 100%;
+        border: 3px rgb(89, 9, 37) solid ;
+        padding: 2%;
+        background-color:  rgb(240, 255, 206, 0.3);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .mapa-index{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        max-width: 200px;
     }
     .mapa{
         border: 3px rgb(89, 9, 37) solid ;
